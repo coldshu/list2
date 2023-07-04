@@ -26,8 +26,8 @@ function printContact(contacts) {
         <td>${c.tel}</td>
       </tr>
     `;
+    $tbody.append(html);
   };
-  $tbody.append(html);
 }
 
 function getPagination() {
