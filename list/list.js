@@ -30,7 +30,24 @@ function printContact(contacts) {
   };
 }
 
-function getPagination() {
+function getPagination(pageno, pagesize, totalcount, blockSize=5) {
+  // pageno    이전으로   start   end   다음으로
+  // 1            0         1      5       6
+  // 2            0         1      5       6
+  // 3            0         1      5       6
+  // 4            0         1      5       6 
+  // 5            0         1      5       6  
+  // 6            5         6      10      11
+  // 7            5         6      10      11
+  // 8            5         6      10      11
+  // 9            5         6      10      11
+  // 10           5         6      10      11
+  // 11           10        11     12      0
+  // 12           10        11     12      0
+
+  for(let i = 1; i <= 12; i++) {
+    const prev = i / 5;
+  }
 
 }
 
